@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <link rel="stylesheet" href="bootstrap1.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/popper.min.js" charset="utf-8"></script>
+
+  <title>Shop Page</title>
+  <style>
+    body{
+     background-image:url("photos/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+  </style>
+  </head>
+
+  <body>
+     <div class="container">
+      <div class="topnav" id="myTopnav">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Photos/pkr1.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Photos/pkr2.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Photos/pkr3.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Photos/pkr4.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Photos/pkr5.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+     <div class="container">
+     
+      <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="score.html">Score</a>
+  <a href="shop.html" class="active">Shop</a>
+  <a href="jsworld.html" >JS World</a>
+  <a href="contact.html">Contact</a>
+  <a href="maps.html">MAP</a>
+  <a href="animation.html">Anime</a>
+  <a href="Sunflower.html">Sunflower</a>
+  <a href="More.html">More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   </div>
+ 
+          <h1 class="header" style="color: white; text-align: center">Welcome to My Shop</h1>
+        </div>
+    <div class="container">
+      
+      <div class="bodyPart">
+
+        <div id="submenu">
+          <table sytle="float:center;">
+            <tr>
+              <td><button type="button" onclick="firstImage()"><span><img src="Photos/i11.jpg" width="200" height="158" /></span>&nbsp;Iphone 11</button></td>
+              <td><button type="button" onclick="secondImage()"><span><img src="Photos/i11pro.jpg" width="200" height="158" /></span>&nbsp;Iphone 11 pro</button></td>
+            </tr>
+            <tr>
+              <td><button type="button" onclick="thirdImage()"><span><img src="Photos/i11promax.jpg" width="200" height="158" /></span>&nbsp;Iphone 11 pro max</button></td>
+              <td><button type="button" onclick="fourthImage()"><span><img src="Photos/i12.jpg" width="200" height="158" /></span>&nbsp;Iphone 12</button></td>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="button" onclick="fifthImage()"><span><img src="Photos/i12pro.jpg" width="200" height="158" /></span>&nbsp;Iphone 12pro</button></td>
+            <td><button type="button" onclick="sixthImage()"><span><img src="Photos/i12promax.jpg" width="200" height="158" /></span>&nbsp;Iphone 12promax</button></td>
+          </tr>
+        </table>
+      </div>
+
+
+     <div class="container">
+            <div class="navbar navbar-expand navbar-dark imgNav">
+            <br/>
+          </div>
+          <div class="displayImage" id="displayImage">
+            <img id="img-source" src="photos/all.jpg" alt="flowers" width="100%" height="500px">
+          </div>
+
+  </p>
+
+
+            
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; 1999-2021 by Shrestha Bibek @ KCGI All Rights Reserved</p>
+      </div>
+    </div>
+    <br>
+    <script>
+       function openWindow(){
+    w = open("", "KCGI", "width=300px, height=300");
+  }
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  function firstImage(){
+  document.getElementById("img-source").src = "photos/i11.jpg";
+}
+function secondImage(){
+  document.getElementById("img-source").src = "photos/i11pro.jpg";
+}
+function thirdImage(){
+  document.getElementById("img-source").src = "photos/i11promax.jpg";
+}
+function fourthImage(){
+  document.getElementById("img-source").src = "photos/i12.jpg";
+}
+function fifthImage(){
+  document.getElementById("img-source").src = "photos/i12pro.jpg";
+}
+function sixthImage(){
+  document.getElementById("img-source").src = "photos/i12promax.jpg";
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+  </body>
+</html>

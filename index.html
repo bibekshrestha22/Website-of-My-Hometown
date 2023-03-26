@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/popper.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <title>HomePage</title>
+  <style>
+    body{
+     background-image:url("photos/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="topnav" id="myTopnav">
+
+  <a href="index.html" class="active">Home</a>
+  <a href="score.html">Score</a>
+  <a href="shop.html">Shop</a>
+  <a href="jsworld.html" >JS World</a>
+  <a href="contact.html">Contact</a>
+  <a href="maps.html">MAP</a>
+  <a href="animation.html">Anime</a>
+  <a href="Sunflower.html">Sunflower</a>
+  <a href="More.html">More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   </div>
+      <div class="bodyPart">
+        <div class="maincontent col align-self-center" id="maincontent">
+          <h1 style="text-align: center; color:white">A Glimpse of My Hometown Pokhara</h1>
+          <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Photos/pkr1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Photos/pkr2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Photos/pkr3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Photos/pkr4.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Photos/pkr5.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<h2 style="color:white; text-align:center;">Details About Pokhara</h2>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Photos/pokhara1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sarangkot</h2>
+        <p class="title1">Sarangkot, Pokhara, Nepal</p>
+        <div id=showContent2>
+        <p>Pokhara is the second largest city in Nepal, after Kathmandu. The town is about 200 kilometres away from Kathmandu, to the west.</p>
+        <p>https://www.lonelyplanet.com/nepal/sarangkot</p><br/>
+        <input type="button" class="button" value="See More" onclick="changeContent2();">
+        <hr/>
+        <input type="button" class="button" value="Visit" onclick="openWindow()" />
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Photos/pokhara2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2 style="color: black">Talbarahi Temple</h2>
+        <p  class="title1">Talbarahi Temple, Lakeside, Pokhara, Nepal</p>
+        <div id=showContent1>
+        <p style="color: black">Tal Barahi Temple, also known as Lake Temple or Barahi Temple is a two-story pagoda temple located in the Kaski District.</p>
+        <p>https://www.holidify.com/places/pokhara/tal-barahi-temple-sightseeing-123775.html</p>
+        <input type="button" class="button" value="See More" onclick="changeContent1();">
+        <hr/>
+        <input type="button" class="button" value="Visit" onclick="openWindow1()" />
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Photos/pokhara3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Lakeside</h2>
+        <p class="title1">Lakeside, Pokhara, Nepal</p>
+        <div id=showContent>
+        <p> The Lakeside part offers many tourist attractions and beautiful views, while the Old City is the commercial hub of Pokhara. </p>
+        <p>https://www.holidify.com/pages/lakeside-pokhara-832.html</p><br/>
+        <input type="button" class="button" value="See More" onclick="changeContent();"> 
+       
+        <hr/>
+        <input type="button" class="button" value="Visit" onclick="openWindow2()" />
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; 1999-2021 by Shrestha Bibek @ KCGI All Rights Reserved</p>
+      </div>
+    </div>
+    <br>
+    <script>
+ function openWindow(){
+    w = open("", "KCGI", "width=600px, height=400");
+  }
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i; 
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+      function setName(){
+    document.form1.username.value="Shrestha Bibek";
+  }
+  function setName(){
+    document.form1.username.value="Shrestha Bibek";
+  }
+  function clear(){
+    document.form1.username.value="";
+  }
+
+  function changeColor(form1){
+  for(var i=0; i<document.form1.color.length; i++){
+    if(document.form1.color[i].checked){
+      alert("Your gender is: "+document.form1.color[i].value);
+      return;
+      }
+  }
+}
+function languageLearned(form1){
+  var items=document.getElementsByName('language');
+  var selectedItems="";
+  for(var i=0;i<items.length;i++){
+    if(items[i].type=="checkbox" && items[i].checked==true){
+      selectedItems+=items[i].value+"\n";
+    }
+  }
+  alert("The learned languages are :"+selectedItems);
+}
+function languageLearned(form1){
+  var items=document.getElementsByName('language');
+  var selectedItems="";
+  for(var i=0;i<items.length;i++){
+    if(items[i].type=="checkbox" && items[i].checked==true){
+      selectedItems+=items[i].value+"\n";
+    }
+  }
+  alert("The learned languages are :"+selectedItems);
+}
+function chooseConcentration(form1){
+  for(var i=0;i<document.form1.KCGgroup.options.length;i++){
+    if(document.form1.KCGgroup.options[i].selected){
+      alert(document.form1.KCGgroup.options[i].text);
+    }
+  }
+}
+var w = null;
+  // Open a window
+  function openWindow(){
+    w = open("https://www.lonelyplanet.com/nepal/sarangkot", "Sarangkot", "width=600px, height=400");
+  }
+  function openWindow1(){
+    w = open("https://www.holidify.com/places/pokhara/tal-barahi-temple-sightseeing-123775.html", "Tal Barahi", "width=600px, height=400");
+  }
+   function openWindow2(){
+    w = open("https://www.holidify.com/pages/lakeside-pokhara-832.html", "Tal Barahi", "width=600px, height=400");
+  }
+  
+  // Close the window which is open.
+  function closeWindow(){
+    if(w){
+      w.close();
+      w = null;
+    }
+  }
+  function firstImage(){
+  document.getElementById("img-source").src = "photos/1.jpg";
+}
+function secondImage(){
+  document.getElementById("img-source").src = "photos/2.jpg";
+}
+function thirdImage(){
+  document.getElementById("img-source").src = "photos/3.jpg";
+}
+function fourthImage(){
+  document.getElementById("img-source").src = "photos/4.jpg";
+}
+function changeContent(){
+  document.getElementById("showContent").innerHTML =  txtall;
+}
+
+function changebackContent(){
+  document.getElementById("showContent").innerHTML =  txtpart;
+}
+
+var txtall = '<p>The Lakeside part offers many tourist attractions and beautiful views, while the Old City is the commercial hub of Pokhara. You can choose to stay in either location, although we recommend Lakeside. The Lakeside is further divided into the North and the Southside. Lakeside is named so, as it surrounds the Phewa Lake or the Phewa Tal, a gorgeous freshwater lake which is eerily similar to a mirror!  <input type="button" class="button" value="Details" onclick="changebackContent();"><hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+
+var txtpart = '<p>The Lakeside part offers many tourist attractions and beautiful views, while the Old City is the commercial hub of Pokhara.<input type="button" class="button" value="Details" onclick="changeContent();"> <hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+function changeContent1(){
+  document.getElementById("showContent1").innerHTML =  txtall1;
+}
+
+function changebackContent1(){
+  document.getElementById("showContent1").innerHTML =  txtpart1;
+}
+
+var txtall1 = '<p>Tal Barahi Temple, also known as Lake Temple or Barahi Temple is a two-story pagoda temple located in the Kaski District of the Gandaki Zone in western Nepal. It is a hindu temple of the Goddess Durga, the protector of gods. It is located in a small island on the south east section of Phewa Lake in Pokhara.<hr/> <input type="button" class="button" value="Details" onclick="changebackContent1();"><hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+
+var txtpart1 = '<p>Tal Barahi Temple, also known as Lake Temple or Barahi Temple is a two-story pagoda temple located in the Kaski District... <input type="button" class="button" value="Details" onclick="changeContent1();"><hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+
+
+
+function changeContent2(){
+  document.getElementById("showContent2").innerHTML =  txtall2;
+}
+
+function changebackContent2(){
+  document.getElementById("showContent2").innerHTML =  txtpart2;
+}
+
+var txtall2 = '<p> Pokhara is the second largest city in Nepal, after Kathmandu. The town is about 200 kilometres away from Kathmandu, to the west.Sarangkot is Ward 18 of Pokhara, Kaski District, Nepal, after it was merged into the city in 2015. It is a popular tourist destination for those who arrive in Pokhara. At the 1991 Nepal census it had a total population of 5,060 with 1,010 individual households.<input type="button" class="button" value="Details" onclick="changebackContent2();"><hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+
+var txtpart2 = '<p>Pokhara is the second largest city in Nepal, after Kathmandu. The town is about 200 kilometres away from Kathmandu, to the west. <input type="button" class="button" value="Details" onclick="changeContent2();"><hr/><input type="button" class="button" value="Visit" onclick="openWindow2()" /></p>';
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+.bodyPart{
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  color:white;
+  }
+.topNavbar{
+  background:transparent;
+  color:white;
+}
+li.hiddenNav{
+  display: none;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 13%;
+  background-color: #466ABA;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: white;
+  color: Red;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+@media screen and (min-width: 1024px){
+  .bodyPart{
+    background: #6E6E6E ;
+  }
+  .imgNav{
+    width: 54%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .bodyPart{
+    background: #6E6E6E;
+  }
+  li.hiddenNav{
+    display: inline-block;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  .imgNav{
+    width: 100%;
+    font-size: 11px;
+  }
+  .imgNav img{
+    width: 100%;
+  }
+  #myBtn{
+    right: 16px;
+  }
+  .timeTableClass{
+    font-size: 8px;
+  }
+  .timeTableClass th{
+    width: 20px;
+  }
+}
+@media print, screen and (max-width: 1024px){
+  .aboutsection2 .subsection{
+    width: 61%;
+  }
+  .imgNav{
+    width: 73%;
+  }
+  #myBtn{
+    right: 47px;
+  }
+  .bodyPart{
+    background: #7979CF ;
+  }
+
+}
+
+@media screen
+ and (max-width: 768px)
+ and (min-width: 400px)
+{
+  .aboutsection2 .subsection{
+    width: 62%;
+  }
+  .bodyPart{
+    background: #6E6E6E ;
+  }
+  .imgNav{
+    width: 98%;
+  }
+
+}
+
+@media print, screen and (max-width: 768px) {
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: none;
+  }
+  .imgNav{
+    width: 98%;
+  }
+
+  #myBtn{
+    right: 16px;;
+  }
+.timeTableClass{
+  font-size: 8px;
+}
+.timeTableClass th{
+  width: 20px;
+}
+  .openClose {
+    padding-top: 20px;
+  }
+
+}
+.bodyPart .maincontent p.header{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    display: inline;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+hr.line{
+  width: 100%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #7d12de;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+
+/* JSWorld page */
+.openClose{
+  justify-content: center;
+}
+.hideCss{
+  justify-content: center;
+  display: flex;
+}
+.openClose button{
+  height: 40px;
+  display: inline-block;
+}
+.openClose p.Captionheader{
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-variant: petite-caps;
+  font-size: 30px;
+}
+span.btnCol{
+  display: block;
+}
+
+/* imagebtn */
+#imageHide{
+  width: 83%;
+  height: 330px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#imageHide:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.HidebtnCol{
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Button Image */
+@media print, screen and (min-width: 1200px) {
+  .imgNav{
+    width: 45%;
+  }
+  .bodyPart{
+    background:#11295C;
+  }
+  .aboutsection2 .subsection{
+    width: 22%;
+  }
+  #myBtn{
+    right: 100px;
+  }
+}
+.imgNav{
+  height: 40px;
+  margin: 0 auto;
+}
+.imgNav ul li:hover{
+  background: #1e7e34;
+}
+.displayImage{
+  justify-content: center;
+  display: flex;
+}
+
+/* Footer */
+.footer{
+  background: #343a40!important;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+.navCol ul li{
+  webkit-animation: mymove 10s infinite;
+    animation: mymove 10s infinite;
+}
+/* Go to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* Japnease */
+.content{
+  color: white;
+}
+.content h2.Japtitle{
+  background: chocolate;
+  text-align: center;
+}
+/* Time Table */
+.timeTableTitle h2{
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.timeTableClass tr{
+  border-bottom-style: groove;
+}
+
+/* About Page */
+p.home_title{
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  margin: 10px 0 10px 0;
+}
+.home_townvid iframe{
+  width: 100%;
+}
+.homedesc{
+  column-count: 2;
+  margin-bottom: 20px;
+}
+.homedesc p{
+  font-size: 20px;
+  text-align: justify;
+  color: floralwhite;
+  float: right;
+  font-style: oblique;
+}
+.aboutsection1 .roundedimage img {
+   width: 26%;
+   height: 200px;
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.aboutsection2{
+  width: 100%;
+  padding-top: 20px;
+  background: teal;
+  float: left;
+  padding-bottom: 20px;
+}
+.aboutsection2 .subsection{
+  float: left;
+  margin-right: 1%;
+}
+.aboutsection2 .subsection ul{
+  padding: 0px;
+}
+.aboutsection2 .subsection ul li{
+  color: white;
+  font-size: medium;
+  width: 75px;
+  float: left;
+  margin-left: 32px;
+}
+.aboutsection2 .subsection p{
+  color: floralwhite;
+  font-size: 20px;
+  text-align: center;
+}
+.checked{
+  color: orange;
+}
+.subscribe{
+  background: #029642;
+  color: white;
+  float: left;
+  width: 90%;
+  padding-bottom: 40px;
+  line-height: 2.1;
+}
+.subscribe button.subscribenow{
+  border: 2px solid white;
+  background: #029642;
+  width: 153px;
+  height: 50px;
+  margin-left: 115px;
+  color: white;
+}
+.subscribe h2{
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+.subscribe p{
+  font-size: 16px;
+}
+.subscribe button.subscribenow:hover{
+  background: white;
+  color: #029642;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Gallery */
+.galleryImageTab{
+  background: chocolate;
+}
+.galleryImageTab a{
+  text-decoration: none;
+}
+.galleryImageTab a:hover{
+  text-decoration: none;
+}
+.galleryImageTab p{
+  color: white;
+  text-align: center;
+}
+
+/* index */
+/* Carasoul Starts */
+.carousel-inner{
+  height: 600px;
+
+}
+.images{
+  height: 600px;
+  width: 100%;
+}
+.carousel-caption{
+  color:black;
+  text-align: right;
+  margin-bottom: 150px;
+  border-left-style: outset;
+  font-family: monospace;
+}
+/*  Carasoul Ends */
+button#imageButton:hover{
+  background: crimson;
+}
+button#active{
+  background: olive;
+}

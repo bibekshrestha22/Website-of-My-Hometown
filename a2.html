@@ -1,0 +1,120 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Fish Tanks</title>
+
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+   var fish1Position = 0;
+      horizontal = new Array(50);
+      var fillPosition = 10;
+      for(var i = 0; i < 50; ++i) {
+         horizontal[i] = fillPosition;
+         fillPosition += 10;
+         }
+      function fish1Swim() {
+        document.getElementById("fish1").style.left = horizontal[fish1Position] + "px";
+        ++fish1Position;
+        if (fish1Position == 49)
+        fish1Position = 0;
+       }
+
+   var fish2Position = 0;
+      horizontal = new Array(50);
+      var fillPosition = 10;
+      for(var i = 0; i < 50; ++i) {
+         horizontal[i] = fillPosition;
+         fillPosition += 10;
+         }
+      function fish2Swim() {
+        document.getElementById("fish2").style.left = horizontal[fish2Position] + "px";
+        ++fish2Position;
+        if (fish2Position == 49)
+        fish2Position = 0;
+       }
+
+   var fish3Position = 0;
+      horizontal = new Array(50);
+      var fillPosition = 10;
+      for(var i = 0; i < 50; ++i) {
+         horizontal[i] = fillPosition;
+         fillPosition += 10;
+         }
+      function fish3Swim() {
+        document.getElementById("fish3").style.left = horizontal[fish3Position] + "px";
+        ++fish3Position;
+        if (fish3Position == 49)
+        fish3Position = 0;
+       }
+
+   var fish4Position = 0;
+      horizontal = new Array(50);
+      var fillPosition = 10;
+      for(var i = 0; i < 50; ++i) {
+         horizontal[i] = fillPosition;
+         fillPosition += 10;
+         }
+      function fish4Swim() {
+        document.getElementById("fish4").style.left = horizontal[fish4Position] + "px";
+        ++fish4Position;
+        if (fish4Position == 49)
+        fish4Position = 0;
+       }
+
+   var fish5Position = 0;
+      horizontal = new Array(50);
+      var fillPosition = 10;
+      for(var i = 0; i < 50; ++i) {
+         horizontal[i] = fillPosition;
+         fillPosition += 10;
+         }
+      function fish5Swim() {
+        document.getElementById("fish5").style.left = horizontal[fish5Position] + "px";
+        ++fish5Position;
+        if (fish5Position == 49)
+        fish5Position = 0;
+       }
+
+   function startSwimming() {
+      setInterval("fish1Swim()",100);
+      setInterval("fish2Swim()",200);
+      setInterval("fish3Swim()",130);
+      setInterval("fish4Swim()",170);
+      setInterval("fish5Swim()",80);
+      }
+
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+
+</head>
+
+<body onload="startSwimming();">
+  
+
+   <p><span id="fish1" style=
+   "position:absolute; left:10px; top:10px"><img src="Photos/fish1.jpg" alt="Image of a fish" /></span></p>
+
+   <p><span id="fish2" style=
+   "position:absolute; left:10px; top:100px"><img src="Photos/fish1.jpg" alt="Image of a fish" /></span></p>
+
+   <p><span id="fish3" style=
+   "position:absolute; left:10px; top:210px"><img src="Photos/fish1.jpg" alt="Image of a fish" /></span></p>
+
+   <p><span id="fish4" style=
+   "position:absolute; left:10px; top:300px"><img src="Photos/fish1.jpg" alt="Image of a fish" /></span></p>
+
+   <p><span id="fish5" style=
+   "position:absolute; left:10px; top:390px"><img src="Photos/fish1.jpg" alt="Image of a fish" /></span></p>
+
+</body>
+</html>

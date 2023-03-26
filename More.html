@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <link rel="stylesheet" href="bootstrap1.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/popper.min.js" charset="utf-8"></script>
+
+  <title>More Page</title>
+  <style>
+  #clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    background: url(Photos/clock.jpg) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+  
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+  
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+  
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+  
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+    body{
+
+     background-image:url("photos/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+  </style>
+  </head>
+
+  <body>
+
+     <div class="container">
+     
+      <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="score.html">Score</a>
+  <a href="shop.html" >Shop</a>
+  <a href="jsworld.html" >JS World</a>
+  <a href="contact.html">Contact</a>
+  <a href="maps.html">MAP</a>
+  <a href="animation.html">Anime</a>
+  <a href="Sunflower.html">Sunflower</a>
+  <a href="More.html" class="active">More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   </div>
+   <h1 style=" font-family: Georgia, serif; color: white; text-align: center;">Responsive analog clock</h1>
+   <br/>
+      <br/>
+   <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <div style=" margin-top: 15px; background-color: #69C0F7; padding: 15px;"> 
+
+<h1 style="text-align: center;">Membership Application form</h1>
+    <form name="fm">
+      <table border="1" cellspacing="0" cellpadding="5 "style="width: 80%; margin: auto; background-color:#d2ace6;">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input type="text" pattern="\d*" name="age" id="Age"></td>
+        </tr>
+        <tr>
+          <td>Telephone number</td>
+          <td><input type="text" pattern="\d*" name="tel" id="tel"></td>
+        </tr>
+        <tr>
+          <td>E-mail:</td>
+          <td><input type="text" name="mail" size="20" id="mail"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+          <input type="button" value="Submit" onClick="check()">
+          <input type="reset" value="Clear">
+          </td>
+        </tr>
+      </table>
+    </form>
+
+</div>
+
+
+
+  
+</div>
+
+
+
+
+    </div>
+  </div>
+ 
+         
+      <div class="footer">
+        <p>Copyright &copy; 1999-2021 by Shrestha Bibek @ KCGI All Rights Reserved</p>
+      </div>
+    </div>
+    <br>
+    <script>
+       var item=["Please input your name.","Please input your age.","Please input your telephone number","Please input your email."];
+
+  function check(){
+    var elem =document.fm.elements;
+    for(var i=0;i<4;i++){
+      if(elem[i].value !=""){
+        elem[i].style.color="#0000FF";
+        switch(elem[i].name){
+          case "age":     
+            if(isNaN(elem[i].value)){
+              alert("Please input correct age.");
+              elem[i].style.color="#FF0000";
+            }else if(elem[i].value<0){
+              elem[i].style.color="#FF0000";
+              alert("You did not input the correct numbers.");
+            }
+            break;
+          
+          case "tel":
+            if(!elem[i].value.match(/^\d{2,3}-\d{4}-\d{4}$/)){
+              elem[i].style.color="#FF0000";
+              alert("Please input correct telephone number");
+            }
+          break;
+          
+          case "mail":
+            if(!elem[i].value.match(/^\S+@\S+\.\S+$/)){
+              elem[i].style.color="#FF0000";
+              alert("Please input correct e-mail number.");
+            }
+          break;
+        }
+      }else{
+        alert(item[i]);
+      }
+    }
+  }
+      setInterval(() => {
+    d = new Date(); //object of date()
+    hr = d.getHours();
+    min = d.getMinutes();
+    sec = d.getSeconds();
+    hr_rotation = 30 * hr + min / 2; //converting current time
+    min_rotation = 6 * min;
+    sec_rotation = 6 * sec;
+  
+    hour.style.transform = `rotate(${hr_rotation}deg)`;
+    minute.style.transform = `rotate(${min_rotation}deg)`;
+    second.style.transform = `rotate(${sec_rotation}deg)`;
+}, 1000);
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+  </body>
+</html>

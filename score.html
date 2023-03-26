@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap1.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/popper.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <title>Score Page</title>
+  <style>
+    body{
+     background-image:url("photos/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+  </style>
+  </head>
+
+  <body>
+        <div class="container">
+      <div class="topnav" id="myTopnav">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Photos/pkr1.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Photos/pkr2.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Photos/pkr3.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Photos/pkr4.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Photos/pkr5.jpg" style="height: 400px;width: 1100px;">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+     
+      <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="#news" class="active">Score</a>
+  <a href="shop.html" >Shop</a>
+  <a href="jsworld.html" >JS World</a>
+  <a href="contact.html">Contact</a>
+  <a href="maps.html">MAP</a>
+  <a href="animation.html">Anime</a>
+  <a href="Sunflower.html">Sunflower</a>
+  <a href="More.html">More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   </div>
+ 
+          <h1 style="color: white; text-align: center">Welcome to My Score Sheet</h1>
+        </div>
+   <div style=" margin-top: 15px; background-color: #69C0F7; padding: 15px;"> 
+
+
+<script type="text/javascript">
+  function openWindow(){
+    w = open("", "KCGI", "width=300px, height=300");
+  }
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  document.write("<strong>There are six students.Their score are as follows.</strong><br>")
+  var n=["Wang", "Clen", "Zhao", "Liu", "Yamamoto", "Tanaka"];
+  var score=[80, 75, 92, 60, 91, 82];
+
+//Listing score of students
+var str = "";for (var i = 0; i < 6; i++){
+  str =  n[i]+ "  " +score[i]+ "<br />";
+document.write(str);
+}
+document.write("<br>")
+
+//score of student who  get more than 90
+
+document.write("<strong>The following students are students who can get A.</strong><br>")
+for(var i=0; i<score.length; i++) {
+      if(score[i]>90){
+
+      document.write( n[i]+" "+score[i]+ "<br>");
+    }
+  }
+  document.write("<br>")
+
+
+  //Calculating  total and average score
+
+var total=0;
+for(var i=0; i<score.length; i++){
+  total+=score[i];
+  var average=total/score.length;
+
+}
+document.write("Total score is "+total+"<br>");
+document.write("The average score is "+average+"<br>");
+
+
+
+
+
+   
+//sorting score in descending order
+  document.write("<br>")
+document.write("<strong>Sort scores in descending order.</strong><br>")
+
+
+
+var temp, temp2;
+for (i=0;i<score.length-1;i++){
+var flag=0;
+  for(let j=0; j<score.length-1-i; j++){
+    if(score[j]<score[j+1]){
+      temp=score[j];
+      temp2 = n[j];
+      score[j]=score[j+1];
+      n[j]=n[j+1];
+      score[j+1]=temp;
+      n[j+1]=temp2;
+      flag=1;   
+  }  
+}
+}
+var str = "";for (var i = 0; i < 6; i++){
+  str = n[i]+ "  " +score[i]+ "<br />";
+document.write(str);
+}
+
+
+
+</script>
+</div>
+
+
+
+  
+</div>
+
+
+
+
+    </div>
+  </div>
+      <div class="footer">
+        <p>Copyright &copy; 1999-2021 by Shrestha Bibek @ KCGI All Rights Reserved</p>
+      </div>
+    </div>
+    <br>
+    <script>
+  function firstImage(){
+  document.getElementById("img-source").src = "photos/i11.jpg";
+}
+function secondImage(){
+  document.getElementById("img-source").src = "photos/i11pro.jpg";
+}
+function thirdImage(){
+  document.getElementById("img-source").src = "photos/i11promax.jpg";
+}
+function fourthImage(){
+  document.getElementById("img-source").src = "photos/i12.jpg";
+}
+function fifthImage(){
+  document.getElementById("img-source").src = "photos/i12pro.jpg";
+}
+function sixthImage(){
+  document.getElementById("img-source").src = "photos/i12promax.jpg";
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+  </body>
+</html>

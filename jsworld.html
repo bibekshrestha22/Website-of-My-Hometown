@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="jsstyle.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/popper.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <title>JS World Page</title>
+  <style>
+    body{
+     background-image:url("photos/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    }
+  </style>
+  </head>
+
+  <body>
+  <div class="container">
+      <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="score.html">Score</a>
+  <a href="shop.html">Shop</a>
+  <a href="#" class="active">JS World</a>
+  <a href="contact.html">Contact</a>
+  <a href="maps.html">MAP</a>
+  <a href="animation.html">Anime</a>
+  <a href="Sunflower.html">Sunflower</a>
+  <a href="More.html">More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   </div>
+      <div class="bodyPart">
+        <div class="sidebar">
+          <a href="index.html">Home</a>
+          <a href="score.html">Score</a>
+          <a href="shop.html">Shop</a>
+          <a class="#" href="jsworld.html">JsWorld</a>
+          <a href="contact.html">Contact</a>
+          <a href="maps.html">MAP</a>
+          <a href="animation.html">Anime</a>
+          <a href="Sunflower.html">Sunflower</a>
+          <a href="More.html">More</a>
+        </div>
+        <div class="maincontent col align-self-center" id="maincontent">
+          <p class="header">Welcome to the World of Java Script</p>
+          <form class="" name="form1" action="#" method="post">
+
+            <div class="input-group mb-3">
+              <input type="text" name="username" class="form-control" placeholder="Enter Your Name" value="">
+              <div class="input-group-prepend"> &nbsp
+                <button type="submit" class="btn btn-info" onclick="alert('Hello Mr./Mrs. '+document.form1.username.value)">Get Name</button> &nbsp
+                <input type="button" class="btn btn-primary" value="Set the name" onclick="setName()"> &nbsp
+                <button type="submit" class="btn btn-danger" onclick="clear()">Clear</button>
+                
+              </div>
+            </div>
+            <input type="radio" name="color" value="Male">Male
+    <input type="radio" name="color" value="Female">Female
+    <input type="radio" name="color" value="None">None<button type="submit" class="btn btn-info" onclick="changeColor()">Choose Gender</button><br/><br/>
+            <br/>
+            <input type="checkbox" name="language" value="japnease">Japnease
+            <input type="checkbox" name="language" value="english">English
+            <input type="checkbox" name="language" value="chinease">Chinease
+            <input type="checkbox" name="language" value="nepali">Nepali
+            <input type="checkbox" name="language" value="others">Others
+            <button type="submit" class="btn btn-info" onclick="languageLearned()">Click Language</button><br/><br/>
+            <div class="input-group">
+              <select class="custom-select" name="KCGgroup">
+                <option selected>Choose...</option>
+                <option value="tourism">Tourism in IT</option>
+                <option value="networking">Networking</option>
+                <option value="web">Web Business Development</option>
+                <option value="genIT">Enterprise Resource Planning</option>
+              </select>
+              <div class="input-group-append">
+                <button class="btn btn-info" type="submit" onclick="chooseConcentration()">Choose Concentration</button>
+              </div>
+            </div>
+            <br/>
+            <br/>
+            <input type="button" class="btn btn-info" value="open the window" onclick="openWindow()" />
+      <input type="button" class="btn btn-primary" value="close the window" onclick="closeWindow()"/>
+<h1>Scroll the window</h1>
+<input type="button" class="btn btn-info" value="window.scrollBy(0, -30)" onclick="window.scrollBy(0, -30)"/>
+<input type="button" class="btn btn-primary" value="window.scrollTo(0, 0)" onclick="window.scrollTo(0, 0)"/><br />
+<h2>try onclick</h2>
+  <img style="height=:250px; width: 270px;" src="photos/sunflower.jpg" name="g"><br />
+  <p>
+    <br/>
+    <input type="button" class="btn btn-info" value="Visible" onclick=g.style.visibility="visible" />
+    <input type="button" class="btn btn-danger" value="Hidden" onclick=g.style.visibility="hidden" />
+     <div class="container">
+              <p class="Captionheader">Mouse Over Event</p>
+            </div>
+            <img src="img/1.jpg" onmouseover="this.src='img/3.jpg'" onmouseout="this.src='photos/koi1.jpg'" width="80%" height="430px">
+            <br/><br/>
+            <div class="navbar navbar-expand navbar-dark imgNav">
+            <ul class="navbar-nav">&nbsp
+              <li class="nav-item active">
+                <button type="button" name="button" class="btn btn-info" id="imageButton" onclick="firstImage()">Sakura</button>
+              </li>&nbsp
+              <li class="nav-item active">
+                <button type="button" name="button" class="btn btn-info" id="imageButton" onclick="secondImage()">Rose</button>
+              </li>&nbsp
+              <li class="nav-item active">
+                <button type="button" name="button" class="btn btn-info" id="imageButton" onclick="thirdImage()">Sunflower</button>
+              </li>
+              &nbsp
+              <li class="nav-item active">
+                <button type="button" name="button" class="btn btn-info" id="imageButton" onclick="fourthImage()">Rohodendron</button>
+              </li>
+            </ul>
+            <br/>
+          </div>
+          <div class="displayImage" id="displayImage">
+            <img id="img-source" src="photos/1.jpg" alt="flowers" width="80%" height="430px">
+          </div>
+
+  </p>
+
+
+            
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; 1999-2021 by Shrestha Bibek @ KCGI All Rights Reserved</p>
+      </div>
+    </div>
+    <br>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+      function setName(){
+    document.form1.username.value="Shrestha Bibek";
+  }
+  function setName(){
+    document.form1.username.value="Shrestha Bibek";
+  }
+  function clear(){
+    document.form1.username.value="";
+  }
+
+  function changeColor(form1){
+  for(var i=0; i<document.form1.color.length; i++){
+    if(document.form1.color[i].checked){
+      alert("Your gender is: "+document.form1.color[i].value);
+      return;
+      }
+  }
+}
+function languageLearned(form1){
+  var items=document.getElementsByName('language');
+  var selectedItems="";
+  for(var i=0;i<items.length;i++){
+    if(items[i].type=="checkbox" && items[i].checked==true){
+      selectedItems+=items[i].value+"\n";
+    }
+  }
+  alert("The learned languages are :"+selectedItems);
+}
+function languageLearned(form1){
+  var items=document.getElementsByName('language');
+  var selectedItems="";
+  for(var i=0;i<items.length;i++){
+    if(items[i].type=="checkbox" && items[i].checked==true){
+      selectedItems+=items[i].value+"\n";
+    }
+  }
+  alert("The learned languages are :"+selectedItems);
+}
+function chooseConcentration(form1){
+  for(var i=0;i<document.form1.KCGgroup.options.length;i++){
+    if(document.form1.KCGgroup.options[i].selected){
+      alert(document.form1.KCGgroup.options[i].text);
+    }
+  }
+}
+var w = null;
+  // Open a window
+  function openWindow(){
+    w = open("http://www.kcg.edu", "KCGI", "width=600px, height=400");
+  }
+  // Close the window which is open.
+  function closeWindow(){
+    if(w){
+      w.close();
+      w = null;
+    }
+  }
+  function firstImage(){
+  document.getElementById("img-source").src = "photos/1.jpg";
+}
+function secondImage(){
+  document.getElementById("img-source").src = "photos/2.jpg";
+}
+function thirdImage(){
+  document.getElementById("img-source").src = "photos/3.jpg";
+}
+function fourthImage(){
+  document.getElementById("img-source").src = "photos/4.jpg";
+}
+    </script>
+  </body>
+</html>
